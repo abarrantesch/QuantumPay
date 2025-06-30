@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Historial de Transacciones - QuantumPay</title>
+  <link rel="icon" href="../img/QuantumPayIcon.png" type="image/png" />
+  <link rel="stylesheet" href="transactions.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main>
+    <section class="transactions-container">
+      <h2>Historial de Transacciones</h2>
+
+      <table class="transactions-table">
+        <thead>
+          <tr>
+            <th>ID Transacción</th>
+            <th>ID Persona</th>
+            <th>Descripción</th>
+            <th>Cuenta</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Promoción Aplicada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TXN001234</td>
+            <td>204567890</td>
+            <td>Pago a Supermercado</td>
+            <td>****5678</td>
+            <td>₡45000.00</td>
+            <td>27/06/2025</td>
+            <td class="status procesado">Procesado</td>
+            <td>Sí</td>
+          </tr>
+          <tr>
+            <td>TXN001235</td>
+            <td>102345678</td>
+            <td>Pago a Restaurante</td>
+            <td>****5678</td>
+            <td>₡20000.00</td>
+            <td>28/06/2025</td>
+            <td class="status procesando">Procesando</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>TXN001236</td>
+            <td>301234567</td>
+            <td>Pago Servicios</td>
+            <td>****9012</td>
+            <td>₡85000.00</td>
+            <td>29/06/2025</td>
+            <td class="status fallido">Pago Fallido</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>TXN001237</td>
+            <td>405678901</td>
+            <td>Pago Luz</td>
+            <td>****1234</td>
+            <td>₡25000.00</td>
+            <td>30/06/2025</td>
+            <td class="status procesado">Procesado</td>
+            <td>Sí</td>
+          </tr>
+          <tr>
+            <td>TXN001238</td>
+            <td>502345678</td>
+            <td>Pago Agua</td>
+            <td>****5678</td>
+            <td>₡15000.00</td>
+            <td>30/06/2025</td>
+            <td class="status procesando">Procesando</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="../home/adminHome.html" class="back-btn">Volver al inicio</a>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="../includes.js"></script>
+</body>
+</html>

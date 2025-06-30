@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrar Promociones - QuantumPay</title>
+  <link rel="icon" href="../img/QuantumPayIcon.png" type="image/png" />
+  <link rel="stylesheet" href="promotions.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main>
+    <section class="promotions-container">
+      <h2>Promociones Activas e Inactivas</h2>
+
+      <table class="promotions-table">
+        <thead>
+          <tr>
+            <th>Nombre Promoción</th>
+            <th>Tipo</th>
+            <th>Banco/Negocio</th>
+            <th>Descripción</th>
+            <th>Estatus</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Descuento BAC</td>
+            <td>Banco</td>
+            <td>BAC Credomatic</td>
+            <td>10% de descuento pagando con BAC</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Compra y Ahorra BP</td>
+            <td>Banco</td>
+            <td>Banco Popular</td>
+            <td>₡5000 cashback en compras mayores a ₡50,000</td>
+            <td class="status pendiente">Pendiente</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Promo Restaurante XYZ</td>
+            <td>Negocio</td>
+            <td>Restaurante XYZ</td>
+            <td>15% descuento consumiendo más de ₡20,000</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Super Compra Davivienda</td>
+            <td>Banco</td>
+            <td>Davivienda</td>
+            <td>20% de descuento en supermercado</td>
+            <td class="status inactivo">Inactivo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Promo Tienda ABC</td>
+            <td>Negocio</td>
+            <td>Tienda ABC</td>
+            <td>Regalo sorpresa en compras mayores a ₡30,000</td>
+            <td class="status pendiente">Pendiente</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Descuento Scotiabank</td>
+            <td>Banco</td>
+            <td>Scotiabank</td>
+            <td>5% de descuento en cualquier compra</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="../home/adminHome.html" class="back-btn">Volver al inicio</a>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="../includes.js"></script>
+</body>
+</html>

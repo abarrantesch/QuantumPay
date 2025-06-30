@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrar Bancos - QuantumPay</title>
+  <link rel="icon" href="../img/QuantumPayIcon.png" type="image/png" />
+  <link rel="stylesheet" href="banks.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main>
+    <section class="banks-container">
+      <h2>Bancos Afiliados</h2>
+
+      <table class="banks-table">
+        <thead>
+          <tr>
+            <th>Nombre del Banco</th>
+            <th>Código Banco</th>
+            <th>Fecha de Afiliación</th>
+            <th>Estatus</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Banco Nacional</td>
+            <td>BNCR001</td>
+            <td>15/02/2022</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Banco Popular</td>
+            <td>BPCR002</td>
+            <td>20/06/2023</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>BAC Credomatic</td>
+            <td>BAC003</td>
+            <td>10/01/2024</td>
+            <td class="status inactivo">Inactivo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Scotiabank</td>
+            <td>SCB004</td>
+            <td>25/03/2023</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+          <tr>
+            <td>Davivienda</td>
+            <td>DVDA005</td>
+            <td>05/07/2024</td>
+            <td class="status activo">Activo</td>
+            <td><button class="manage-btn">Administrar</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="../home/adminHome.html" class="back-btn">Volver al inicio</a>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="../includes.js"></script>
+</body>
+</html>
