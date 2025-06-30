@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabecera */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Área principal */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f6f8;
+}
+
+/* Contenedor administrar cuentas */
+.manage-accounts-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.manage-accounts-container h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #4a90e2;
+}
+
+/* Lista de cuentas */
+.accounts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Tarjeta de cuenta */
+.account-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Para móviles */
+}
+
+/* Datos de la cuenta en columna */
+.account-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+    gap: 5px;
+}
+
+.account-info p {
+    margin: 0;
+}
+
+/* Contenedor de botones */
+.account-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* Botones de editar y eliminar */
+.edit-btn,
+.delete-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #357ab8;
+}
+
+.delete-btn {
+    background-color: #e04e4e;
+}
+
+.delete-btn:hover {
+    background-color: #b83636;
+}
+
+/* Botón agregar cuenta */
+.add-account-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+}
+
+.add-account-btn:hover {
+    background-color: #357ab8;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.edit-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    text-decoration: none; /* quitar subrayado */
+    display: inline-block;
+}
+
+.edit-btn:hover {
+    background-color: #357ab8;
+}

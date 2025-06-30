@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agregar Cuenta Bancaria - QuantumPay</title>
+    <link rel="icon" href="..\img\QuantumPayIcon.png" type="image/png" />
+    <link rel="stylesheet" href="newaccount.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <main>
+        <section class="add-account-container">
+            <h2>Agregar Cuenta Bancaria</h2>
+            <form id="add-account-form" autocomplete="off">
+                <label for="bank">Banco</label>
+                <select id="bank" name="bank" required>
+                    <option value="">Selecciona un banco</option>
+                    <option value="Banco Nacional">Banco Nacional</option>
+                    <option value="Banco Popular">Banco Popular</option>
+                    <option value="BAC Credomatic">BAC Credomatic</option>
+                    <option value="Scotiabank">Scotiabank</option>
+                    <option value="Davivienda">Davivienda</option>
+                </select>
+
+                <label for="account-number">Número de Cuenta</label>
+                <input type="text" id="account-number" name="account-number" placeholder="CRXXXXXXXXXXXXXXXXXX" required />
+
+                <label for="alias">Alias de la Cuenta</label>
+                <input type="text" id="alias" name="alias" placeholder="Mi cuenta de ahorro" />
+
+                <button type="submit">Agregar Cuenta</button>
+            </form>
+            <p class="back-link">
+                <a href="addaccount.html">&larr; Volver a Administrar Cuentas</a>
+            </p>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="../includes.js"></script>
+</body>
+</html>

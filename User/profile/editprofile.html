@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editar Perfil - QuantumPay</title>
+  <link rel="icon" href="../img/QuantumPayIcon.png" type="image/png" />
+  <link rel="stylesheet" href="editprofile.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main>
+    <section class="edit-profile-container">
+      <h2>Editar Perfil</h2>
+
+      <form class="edit-profile-form" autocomplete="off">
+        <label for="fullname">Nombre completo</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Tu nombre completo" value="Juan Pérez Gómez" required />
+
+        <label for="identification">Cédula</label>
+        <input type="text" id="identification" name="identification" placeholder="1-1234-5678" value="1-1234-5678" required />
+
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" name="phone" placeholder="+506 8888 9999" value="+506 8888 9999" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" value="juan.perez@example.com" required />
+
+        <a href="perfil.html" class="save-btn">Guardar Cambios</a>>
+      </form>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="../includes.js"></script>
+</body>
+</html>
